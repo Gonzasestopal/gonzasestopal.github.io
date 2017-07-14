@@ -1,5 +1,5 @@
 section {
-  height: 120vh;
+  height: 1024px;
 }
 
 .overlay {
@@ -10,14 +10,11 @@ section {
   z-index:-2;
 }
 
-.about {
-  padding-top: 5em;
-}
-
-.container > h1 {
+.container > div > h1 {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
+  color: white;
 }
 
 .container > h2 {
@@ -146,6 +143,7 @@ section {
   font-size: 14px;
   line-height: 1.8em;
   font-weight:400;
+  font-family: 'Lato', sans-serif;
 }
 .post-module .post-content .post-meta {
   margin: 30px 0 0;
@@ -162,11 +160,6 @@ section {
   display: block !important;
   height: auto !important;
   opacity: 1 !important;
-}
-.container {
-  max-width: 800px;
-  min-width: 640px;
-  margin: 0 auto;
 }
 .container:before,
 .container:after {
@@ -211,4 +204,61 @@ section {
 }
 .container .info span .fa {
   color: #e74c3c;
+}
+
+.bg {
+	z-index: -1;
+  position: fixed; 
+  top: -70%; 
+  left: -30%; 
+  height: 100%; 
+}
+.bg img {
+  position: absolute; 
+  min-height: 300%;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+}
+
+.absolute {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.no-margin {
+	margin: 0;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.m-center {
+  margin: 0 auto;
+}
+
+.gradient {
+	background: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0,0,0,.20));
+}
+
+.btn-rounded {
+	border-radius: 50%;
+	line-height: 1.5;
+}
+
+.btn-rounded-lg {
+	padding:20px 24px;
+}
+
+.parent-height {
+	height: 100%;
+}
+.parent-width {
+	width: 100%
+}
+
+.no-overflow {
+	overflow: hidden;
 }

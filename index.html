@@ -3,32 +3,60 @@
 <head>
 	<title>Gonza Sestopal | Portfolio</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">  
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet" >
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/mdb.min.css" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="overlay"></div>
-	<section class="about">
-		<div class="container">
-			<h1>¡Bienvenido!</h1>
-			<h2>Mi nombre es Gonzalo Augusto Sestopal</h2>
-			<h2>Python full stack y django artist</h2>
-			<hr>
-			<h1>Sobre mi</h1>
-			<p>90's kid, amante de los perros y atari champ.</p>
-			<p>En el año 2015 forme parte de <a href="https://devf.mx/">devf</a> una escuela hacker que me <b>cambio la vida</b>. Aprendi a programar en solo 2 meses y conoci personas extraordinarias con la filosofía de cambiar el mundo a traves del codigo.</p>
-			<p>Me propuse seguir esta corriente ideologica y conocí a <a href="https://www.colaboradora.mx">colaboradora</a>, una startup que estaba decidida en <b>revolucionar el modelo educativo nacional</b> a través de una plataforma que vincule y apoye esfuerzos estudiantiles.<p>
-			<p>Considero que mi mayor <b>motivación</b> e <b>inspiración</b> es colaborar en <b>proyectos con valor social</b>, con el fin de transformar el esfuerzo colectivo en mejorar la calidad de vida de las personas.</p>
+		<section>
+		 <div class="container flex-center">
+			<div class="jumbotron no-padding parent-width">
+				<div class="row no-margin">
+				<div class="col no-padding no-overflow">
+					<div style="text-indent:-150px;">
+						<img src="intro.jpg">
+					</div>
+
+				</div>
+				<div class="col">
+					<!--Naked Form-->
+					<div class="card-block p-5">
+
+					    <!--Header-->
+					    <h1 class="display-2 mb-2 mt-0"><strong>Python and dogs.</strong></h1>
+
+					    <!--Body-->
+							<p class="mb-2" style="color:#757575;font-family:Roboto,sans-serif">Mi mayor <b>motivación</b> e <b>inspiración</b> es colaborar en <b>proyectos con valor social</b>, con el fin de transformar el esfuerzo colectivo en mejorar la calidad de vida de las personas.</p>
+				
+							<a class="btn btn-primary btn-rounded btn-rounded-lg" href="https://www.facebook.com/gonzaloaugusto.sestopal" target="_blank" role="button"><i class="fa fa-facebook" style="padding:0 3px" aria-hidden="true"></i></a>
+							<a class="btn btn-unique btn-rounded btn-rounded-lg" href="https://www.github.com/gonzasestopal" target="_blank" role="button"><i class="fa fa-github" aria-hidden="true"></i></a>
+
+					</div>
+				</div>
+			</div>
 		</div>
+	 </div>
 	</section>
 	<section class="proyectos">
 	 <div class="container">
-	 	<hr>
-	 	<h1>Mis proyectos</h1>
-	    <div class="column">
-			<div class="post-module">
+
+		 <!-- divider -->
+		 <div class="divider-new mt-0">
+	 		<h1>Mis proyectos</h1>
+		 </div>
+		 <!-- ./divider -->
+
+		 <!-- row -->
+		 <div class="row justify-content-md-center">
+			<!-- card --->
+	    <div class="m-center col-10 col-lg-5 col-md-8 col-sm-10 mt-5">
+			 <div class="post-module">
 			  <div class="thumbnail">
 			  	<a href="https://gonzasestopal.github.io/abcbook"><img src="hackaton.jpg" alt="Hackaton"></a>
 			  </div>
@@ -38,10 +66,13 @@
 		        <h2 class="sub_title">Django + Angular</h2>
 		        <p style="display: block; height: 101px; opacity: 1;" class="description">Forme parte de un equipo como desarrollador django durante un hackaton. La idea consitia de una plataforma para usuarios con visibilidad limitada utilizando ng-audio.</p>
 			  </div>
-			</div>
-	     </div>
-	    <div class="column">
-			<div class="post-module">
+			 </div>
+	    </div>
+			<!-- /.card -->
+			
+			<!-- card --->
+	    <div class="m-center col-10 col-lg-5 col-md-8 col-sm-10 mt-5">
+			 <div class="post-module">
 			  <div class="thumbnail">
 			  	<a href="https://www.colaboradora.mx"><img src="colab.jpg" alt="Colaboradora"></a>
 			  </div>
@@ -50,11 +81,17 @@
 		        <h2 class="sub_title">Django + Heroku</h2>
 		        <p style="display: block; height: 101px; opacity: 1;" class="description">Utilizamos integraciones como elasticsearch y algolia, migramos el servidor de digitalocean a heroku y automatizamos el proceso de selección a traves del manejo de csv.</p>
 			  </div>
-			</div>
-	     </div>
+			 </div>
+	    </div>
+			<!-- /.card -->
+		 </div>
+		 <!-- ./row -->
 
-	    <div class="column" style="margin-top:50px">
-			<div class="post-module">
+		 <!-- row -->
+		 <div class="row justify-content-md-center">
+			<!-- card -->
+	    <div class="m-center col-10 col-lg-5 col-md-8 col-sm-10 mt-5">
+			 <div class="post-module">
 			  <div class="thumbnail">
 			  	<a href="https://gonzasestopal.github.io/krreame"><img src="krreame.jpg" alt="krreame"></a>
 			  </div>
@@ -64,10 +101,13 @@
 		        <h2 class="sub_title">Django + FB Authentication</h2>
 		        <p style="display: block; height: 101px; opacity: 1;" class="description">Integre el sistema de autenticación y comentarios de facebook usando django. El demo a continuación es sólo para fines ilustrativos.</p>
 			  </div>
-			</div>
-	     </div>
-	    <div class="column" style="margin-top:50px">
-			<div class="post-module">
+			 </div>
+	    </div>
+			<!-- ./card -->
+	
+			<!-- card -->
+	    <div class="m-center col-10 col-lg-5 col-md-8 col-sm-10 mt-5">
+			 <div class="post-module">
 			  <div class="thumbnail">
 			  	<a href="https://gonzasestopal.github.io/paseandogs"><img src="doge.jpeg" alt="Paseandogs"></a>
 			  </div>
@@ -77,9 +117,12 @@
 		        <h2 class="sub_title">HTML + CSS + JS</h2>
 		        <p style="display: block; height: 101px; opacity: 1;" class="description">Landing page con tematica canina.</p>
 			  </div>
-			</div>
-	     </div>
+			 </div>
+	    </div>
+			<!-- ./card -->
 	  </div>
+		<!-- ./row -->
+	
 	</section>
 	<section>
 		<div class="container">
