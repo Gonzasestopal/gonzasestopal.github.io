@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet" >
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/mdb.min.css" rel="stylesheet"> 
+	<link href="css/mdb.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -51,9 +51,61 @@
 
 		 <!-- divider -->
 		 <div class="divider-new mt-0">
-	 		<h1>proyects</h1>
+	 		<h1>professional experience</h1>
 		 </div>
 		 <!-- ./divider -->
+
+		 <!-- row -->
+		 <div class="row justify-content-md-center">
+			<!-- card --->
+			<div class="m-center col-10 col-lg-5 col-md-8 col-sm-10">
+				<div class="post-module" onclick="openModal('modals/fondeadora.html')" style="cursor: pointer; position: relative;">
+
+					<!-- External link (correct URL + correct position) -->
+					<div class="floating-icon" style="position: absolute; top: -28px; left: -28px; z-index: 10; background: white;">
+					  <a href="https://fondeadora.com" target="_blank" onclick="event.stopPropagation()">
+						<img src="images/fondea_icon.jpg" width="26">
+					  </a>
+					</div>
+
+					<div class="thumbnail">
+					  <img src="images/fondea.jpg" alt="Fondea">
+					</div>
+
+					<div class="post-content">
+					  <h1 class="title">Fondeadora</h1>
+					  <h2 class="sub_title">Founding Engineer</h2>
+					  <p style="display: block; height: 101px; opacity: 1;" class="description">
+						We built everything from the ground up, including most banking
+						integrations, cloud infrastructure and team culture.
+					  </p>
+					</div>
+
+				</div>
+			  </div>
+			<!-- /.card -->
+
+			<!-- card --->
+	    <div class="m-center col-10 col-lg-5 col-md-8 col-sm-10">
+			 <div class="post-module" onclick="openModal('modals/visito.html')" style="cursor: pointer; position: relative;">
+			  <div class="floating-icon" style="position: absolute; top: -28px; left: -28px; z-index: 10; background: #0F7861;">
+			    <a href="https://visitoai.com" target="_blank" onclick="event.stopPropagation()">
+			      <img src="images/ai.svg" width="26" />
+			    </a>
+			  </div>
+			  <div class="thumbnail">
+			  	<img src="images/visito.png" alt="Visito">
+			  </div>
+			  <div class="post-content">
+		        <h1 class="title">Visito</h1>
+		        <h2 class="sub_title">WebSockets + React + MongoDB + Azure</h2>
+		        <p style="display: block; height: 101px; opacity: 1;" class="description">Built with WebSockets for real-time features, React for the frontend, MongoDB for data storage, and deployed on Azure cloud infrastructure.</p>
+			  </div>
+			 </div>
+	    </div>
+			<!-- /.card -->
+		 </div>
+		 <!-- ./row -->
 
 		 <!-- row -->
 		 <div class="row justify-content-md-center">
@@ -61,18 +113,28 @@
 	    <div class="m-center col-10 col-lg-5 col-md-8 col-sm-10 mt-5">
 			 <div class="post-module">
 			  <div class="thumbnail">
-				<a href="https://fondeadora.com/"><img src="images/fondea.jpg" alt="Fondea"></a>
+			  	<a href="https://www.colaboradora.mx"><img src="images/colab.jpg" alt="Colaboradora"></a>
 			  </div>
 			  <div class="post-content">
-		        <h1 class="title">Fondeadora</h1>
-		        <h2 class="sub_title">Founding Engineer</h2>
-		        <p style="display: block; height: 101px; opacity: 1;" class="description">We built everything from the ground up, including most banking integrations, cloud infrastructure and team culture.</p>
+		        <h1 class="title">Colaboradora</h1>
+		        <h2 class="sub_title">Software Engineer</h2>
+		        <p style="display: block; height: 101px; opacity: 1;" class="description">We made students life easier connecting them to real career opportunities through algolia, elasticsearch to mention some integrations.</p>
 			  </div>
 			 </div>
 	    </div>
 			<!-- /.card -->
 		 </div>
 		 <!-- ./row -->
+
+	</section>
+	<section class="proyectos">
+	 <div class="container">
+
+		 <!-- divider -->
+		 <div class="divider-new mt-0">
+	 		<h1>proyects</h1>
+		 </div>
+		 <!-- ./divider -->
 
 		 <!-- row -->
 		 <div class="row justify-content-md-center">
@@ -87,21 +149,6 @@
 		        <h1 class="title">Djangular</h1>
 		        <h2 class="sub_title">Django + Angular</h2>
 		        <p style="display: block; height: 101px; opacity: 1;" class="description">Joined a team as a django developer during a hackathon. We built a platform for users with limited visibility using ng-audio.</p>
-			  </div>
-			 </div>
-	    </div>
-			<!-- /.card -->
-			
-			<!-- card --->
-	    <div class="m-center col-10 col-lg-5 col-md-8 col-sm-10 mt-5">
-			 <div class="post-module">
-			  <div class="thumbnail">
-			  	<a href="https://www.colaboradora.mx"><img src="images/colab.jpg" alt="Colaboradora"></a>
-			  </div>
-			  <div class="post-content">
-		        <h1 class="title">Colaboradora</h1>
-		        <h2 class="sub_title">Software Engineer</h2>
-		        <p style="display: block; height: 101px; opacity: 1;" class="description">We made students life easier connecting them to real career opportunities through algolia, elasticsearch to mention some integrations.</p>
 			  </div>
 			 </div>
 	    </div>
@@ -126,7 +173,7 @@
 			 </div>
 	    </div>
 			<!-- ./card -->
-	
+
 			<!-- card -->
 	    <div class="m-center col-10 col-lg-5 col-md-8 col-sm-10 mt-5">
 			 <div class="post-module">
@@ -165,7 +212,7 @@
 
 	  </div>
 		<!-- ./row -->
-	
+
 	</section>
 	<section>
 		<div class="container">
@@ -179,8 +226,15 @@
 		<div class="container">
 		</div>
 	</section>
+
+	<div id="modal-overlay" class="modal-overlay" onclick="closeModal(event)">
+		<div id="modal-frame" class="modal-frame"></div>
+	  </div>
+
+	<script src="js/modal.js"></script>
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.color-2.1.2.min.js"></script>
 	<script src="js/style.js"></script>
+
 </body>
 </html>
