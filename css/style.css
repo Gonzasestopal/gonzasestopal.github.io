@@ -249,14 +249,19 @@ h1 {
 .gradient {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
 }
-
-.btn-rounded {
+.btn-rounded-lg {
+  width: clamp(56px, 6vw, 72px);
+  height: clamp(56px, 6vw, 72px);
+  padding: 0;
   border-radius: 50%;
-  line-height: 1.5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-rounded-lg {
-  padding: 20px 24px;
+.btn-rounded-lg .fa {
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1;
 }
 
 .parent-height {
