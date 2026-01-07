@@ -250,8 +250,8 @@ h1 {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
 }
 .btn-rounded-lg {
-  width: clamp(56px, 6vw, 72px);
-  height: clamp(56px, 6vw, 72px);
+  width: clamp(44px, 5vw, 58px);
+  height: clamp(44px, 5vw, 58px);
   padding: 0;
   border-radius: 50%;
   display: inline-flex;
@@ -260,7 +260,7 @@ h1 {
 }
 
 .btn-rounded-lg .fa {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(1.4rem, 2.2vw, 1.9rem);
   line-height: 1;
 }
 
@@ -457,5 +457,73 @@ body {
 @media (min-width: 721px) {
   .jumbotron .row > .col:first-child {
     display: block;
+  }
+}
+
+/* Card-style jumbotron for screens under 1024px */
+.jumbotron-card-mobile {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  /* Hide regular jumbotron on screens under 1024px */
+  .jumbotron {
+    display: none;
+  }
+
+  /* Show card-style jumbotron on screens under 1024px */
+  .jumbotron-card-mobile {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow: hidden;
+  }
+
+  /* Prevent overflow on container and row */
+  .jumbotron-card-mobile .container {
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .jumbotron-card-mobile .row {
+    margin-left: 0;
+    margin-right: 0;
+    overflow: hidden;
+  }
+
+  /* Fix image overflow in jumbotron card */
+  .jumbotron-card-mobile .post-module .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Ensure post-module doesn't overflow and expands with content */
+  .jumbotron-card-mobile .post-module {
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+
+  /* Make post-content expand naturally instead of absolute positioning */
+  .jumbotron-card-mobile .post-module .post-content {
+    position: relative;
+    bottom: auto;
+    padding: 30px;
+  }
+
+  /* Make paragraphs responsive with clamp */
+  .jumbotron-card-mobile .post-module .post-content p {
+    font-size: clamp(14px, 2.5vw, 16px);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Hide card-style jumbotron on desktop */
+  .jumbotron-card-mobile {
+    display: none;
   }
 }
