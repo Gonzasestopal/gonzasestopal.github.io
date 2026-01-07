@@ -4,12 +4,8 @@ body {
   height: 100%;
 }
 
-section {
-}
-
-section.proyectos {
-  height: auto;
-  margin: 40px 0;
+h1 {
+  font-size: clamp(32px, 6vw, 64px);
 }
 
 .overlay {
@@ -446,217 +442,15 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-.divider-new {
-  margin-bottom: 40px !important;
-}
-
 /* Remove margin-top from first row of cards in professional experience section */
-section.proyectos .row:first-of-type .m-center {
-  margin-top: 0 !important;
+
+/* Hide first column of jumbotron on mobile/tablet, show only on desktop */
+.jumbotron .row > .col:first-child {
+  display: none;
 }
 
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-  section:first-of-type {
-    min-height: 100vh;
-    height: auto;
-    padding: 20px 0;
-  }
-
-  section:first-of-type .row > .col:first-child {
-    display: none;
-  }
-
-  section:first-of-type .row > .col:last-child {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-
-  section:first-of-type .card-block {
-    padding: 2rem !important;
-  }
-
-  section:first-of-type .display-2 {
-    font-size: 2.5rem !important;
-  }
-
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .container > div > h1 {
-    letter-spacing: 5px;
-    font-size: 18px;
-  }
-
-  .post-module {
-    min-width: auto;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-
-  .post-module .thumbnail {
-    height: 300px;
-  }
-
-  .post-module .thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .post-module .post-content {
-    padding: 20px;
-    position: relative;
-  }
-
-  .post-module .post-content .title {
-    font-size: 20px;
-  }
-
-  .post-module .post-content .sub_title {
-    font-size: 16px;
-  }
-
-  .post-module .post-content .description {
-    font-size: 13px;
-  }
-
-  .floating-icon {
-    width: 48px;
-    height: 48px;
-  }
-
-  .floating-icon img {
-    width: 22px !important;
-  }
-
-  .floating-icon[style*="top: -28px"] {
-    top: -20px !important;
-    left: -20px !important;
-  }
-
-  .post-module .post-content .gh-mark {
-    left: auto;
-    right: 20px;
-    top: -20px;
-  }
-
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .row .m-center {
-    margin-bottom: 30px;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .row .m-center:last-child {
-    margin-bottom: 0;
-  }
-
-  .modal-frame {
-    width: 95vw;
-    min-height: 300px;
-    margin: 10px;
-  }
-
-  .project-modal {
-    padding: 24px 20px;
-  }
-
-  .modal-title {
-    font-size: 22px;
-    padding-right: 35px;
-  }
-
-  .modal-close {
-    top: 12px;
-    right: 12px;
-    font-size: 20px;
-  }
-
-  .modal-section {
-    margin-top: 20px;
-  }
-
-  .modal-section h3 {
-    font-size: 18px;
-  }
-
-  .chips {
-    gap: 8px;
-  }
-
-  .chips li {
-    font-size: 11px;
-    padding: 3px 8px;
-  }
-
-  .no-overflow > div {
-    text-indent: 0 !important;
-  }
-
-  .no-overflow img {
-    width: 100%;
-    height: auto;
-  }
-
-  section.proyectos {
-    margin: 20px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  section:first-of-type .display-2 {
-    font-size: 2rem !important;
-  }
-
-  section:first-of-type .card-block {
-    padding: 1.5rem !important;
-  }
-
-  .container > div > h1 {
-    letter-spacing: 3px;
-    font-size: 16px;
-  }
-
-  .post-module {
-    height: auto;
-    min-height: 400px;
-  }
-
-  .post-module .thumbnail {
-    height: 250px;
-  }
-
-  .post-module .post-content {
-    padding: 15px;
-  }
-
-  .post-module .post-content .title {
-    font-size: 18px;
-  }
-
-  .post-module .post-content .sub_title {
-    font-size: 14px;
-  }
-
-  .modal-frame {
-    width: 98vw;
-    border-radius: 12px;
-  }
-
-  .project-modal {
-    padding: 20px 16px;
-  }
-
-  .modal-title {
-    font-size: 20px;
-    padding-right: 30px;
+@media (min-width: 721px) {
+  .jumbotron .row > .col:first-child {
+    display: block;
   }
 }
