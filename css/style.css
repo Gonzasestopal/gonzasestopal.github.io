@@ -97,6 +97,10 @@ h1 {
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
+
+.post-module .thumbnail img[src="images/kopilot.jpg"] {
+  transform: translateY(-275px);
+}
 .post-module .post-content {
   position: absolute;
   bottom: 0;
